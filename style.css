@@ -7,3 +7,23 @@ Template: simone
 */
 
 @import url('../simone/style.css');
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+.title-box{
+    border:none;
+}
+
+.main-navigation{
+    background:#525252;
+}
+
+h1 {
+font-family: 'Oswald','Lato', sans-serif;
+}
+
+.entry-content{
+font-family: 'Droid Serif','PT Serif', serif;
+    color:#c6f;
+}
