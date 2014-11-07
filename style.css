@@ -11,6 +11,15 @@ Template: simone
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
+/* Header */
+.header-background-image .title-box {
+    background: hsla(0, 0%, 1%, 0.1);
+}
+
+.site-branding {
+    background: hsl(30, 43%, 58%);
+}
+
 .title-box{
     border:none;
 }
@@ -20,10 +29,108 @@ Template: simone
 }
 
 h1 {
-font-family: 'Oswald','Lato', sans-serif;
+    font-family: 'Lato', sans-serif;   
 }
 
-.entry-content{
-font-family: 'Droid Serif','PT Serif', serif;
-    color:#c6f;
+h1.site-title {
+    font-style:normal;
+    font-weight: 400;
+    font-size: 40px;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    line-height: normal;
+    padding-bottom: 1rem;
 }
+
+h2.site-description {
+    font-weight: 100;
+    font-size: 14px;
+    font-size: 1.4rem; 
+}
+
+
+/* Contents */
+.category-list a {
+    color: #b92326;
+}
+
+h2, .entry-content{
+    font-family: 'Merriweather','PT Serif', serif;
+}
+
+h1.entry-title{
+    font-style:normal;
+    font-weight:400;
+}
+.entry-content p, .entry-content ul, .entry-content ol {
+    font-style:light;
+    font-weight:300;
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.6em;
+    color:#525252;
+}
+
+/* widget title */
+h1.widget-title{
+    color:#b92326;
+    font-style:normal;
+    font-weight:700;
+}
+
+.widget a {
+color: #000;
+}
+
+/* minicon */
+@font-face {
+	font-family: 'minicon';
+	src:url('../fonts/minicon.eot?-w1qgxs');
+	src:url('../fonts/minicon.eot?#iefix-w1qgxs') format('embedded-opentype'),
+		url('../fonts/minicon.woff?-w1qgxs') format('woff'),
+		url('../fonts/minicon.ttf?-w1qgxs') format('truetype'),
+		url('../fonts/minicon.svg?-w1qgxs#minicon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'minicon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bike2:before {
+	content: "\e001";
+}
+.icon-notebook26:before {
+	content: "\e002";
+}
+.icon-home:before {
+	content: "\e003";
+}
+.icon-user:before {
+	content: "\e600";
+}
+
+/* taxonomies */
+.taxonomies {
+    font-family: 'Lato';
+    font-size: 90%;
+    margin-top:4rem;
+    margin-bottom: 2rem;
+    color:red;
+}
+
+.taxonomies a {
+    font-weight: 600;
+}
+
