@@ -25,7 +25,7 @@ Template: simone
 }
 
 .main-navigation{
-    background:#525252;
+    background:#ccc;
 }
 
 h1 {
@@ -124,13 +124,22 @@ color: #000;
 /* taxonomies */
 .taxonomies {
     font-family: 'Lato';
-    font-size: 90%;
-    margin-top:4rem;
+    font-size: 90%; 
     margin-bottom: 2rem;
     color:red;
 }
 
 .taxonomies a {
     font-weight: 600;
+}
+
+.review-header {
+    padding: 3px 2rem;
+    margin-top: -1.8em;
+    background: hsl(0, 0%, 25%);
+    font-family: 'Lato';
+    font-size: 80%;
+    text-transform: uppercase;
+    color: #fff;
 }
 

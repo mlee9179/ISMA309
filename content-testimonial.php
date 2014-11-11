@@ -31,6 +31,7 @@
 
     }
     ?>
+        
 	<header class="entry-header clear">
             <?php
 
@@ -61,6 +62,19 @@
                         <?php edit_post_link( sprintf( ' | %s', __( 'Edit', 'simone' ) ), '<span class="edit-link">', '</span>' ); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
+        
+        <?php 
+        if ('review' == get_post_type() ) { ?>
+        <div class="taxonomies">
+            <div class="product-type">
+                <?php echo get_the_term_list( $post->ID, 'product-type', 'Type of product: ', ', ', '' ); ?> 
+            </div>
+            <div class="mood">
+                <?php echo get_the_term_list( $post->ID, 'mood', 'The mood this puts me in: ', ', ', '' ); ?> 
+            </div>
+        </div>
+        <?php } ?>
+        
 	</header><!-- .entry-header -->
 
         <?php

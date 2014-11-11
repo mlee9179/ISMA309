@@ -1,11 +1,7 @@
 <?php
 /**
- * The template for displaying Archive pages.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package Simone
- */
+* Taxonomy index template
+*/
 
 get_header(); ?>
 
@@ -16,7 +12,11 @@ get_header(); ?>
 
 			<header class="page-header">
 				<h1 class="page-title">
-					All Reviews:
+                    <?php 
+                    $current_term = get_queried_object();
+                    $taxonomy = get_taxonomy($current_term->taxonomy);
+                    echo $taxonomy->label . ': ' . $current_term->name;
+                    ?>
 				</h1>
 				<?php
 					// Show an optional term description.
