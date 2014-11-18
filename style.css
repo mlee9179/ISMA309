@@ -6,7 +6,7 @@ Version: 0.0.2
 Template: simone
 */
 
-@import url('../simone/style.css');
+/*@import url('../simone/style.css');
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
@@ -25,7 +25,11 @@ Template: simone
 }
 
 .main-navigation{
+<<<<<<< HEAD
     background:#434343;
+=======
+    background:#525252;
+>>>>>>> css-background
 }
 
 h1 {
