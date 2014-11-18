@@ -7,10 +7,7 @@ function simone_child_fonts(){
 }
 
 add_action('wp_enqueue_scripts','simone_child_fonts');
-?>
 
-
-<?php
 
 // Post, Review & Testimonial 
 
